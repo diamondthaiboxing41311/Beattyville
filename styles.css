@@ -1,0 +1,272 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+header{
+	height: 150px;
+	background-image: radial-gradient(blue, black);
+	color: #ffffff;
+	font-weight: bolder;
+	text-align: center;
+	padding-top: 15px;
+	border-bottom: solid 5px #ffffff;
+}
+
+.headerImage {
+	height: 100px;
+	width: auto;
+	position: relative;
+	top:0;
+	bottom: 0;
+}
+
+/*body formatting*/
+
+body {
+	background-color: #000000;
+	font: sans-sarif, arial;
+	color: white;
+}
+
+img {
+	height: 200px;
+	width: auto;
+}
+
+/* Navbar Formatting*/
+
+
+.navbar {
+	background-color: #4a4a4a;
+	padding: 0px;
+	color: #ffffff;
+	text-align: center;
+}
+
+.navList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navLink {
+  float: left;
+  padding: 10px;
+  border-bottom: solid 4px gray;
+}
+
+.navLink:hover {
+	background-color: black;
+	color:white;
+	font-weight: bolder;
+	text-decoration: underline;
+	border-bottom: solid 4px blue;
+}
+
+.navLink a {
+	color: #ffffff;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+
+/*page formatting*/
+
+
+.pageContent {
+	margin-top: 10px;
+}
+
+.backgroundInfo {
+	width: 50%;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	color: #000000;
+}
+
+.backgroundInfo img {
+	border-radius: 7%;
+	border: solid 2px #ffffff;
+	box-shadow: 10px 10px 8px #0a0c4a;
+	color: white;
+}
+
+.backgroundInfo iframe {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid 3px #ffffff;
+}
+
+.infoCard {
+	background-image: url(Images/Logo9dark.JPG);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding: 20px;
+	color: #ffffff;
+	overflow: 
+}
+
+.infoCard p {
+	margin-left: 15px;
+	margin-top: 10px;
+}
+
+.infoCard img {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: 20px;
+}
+
+.gymImage {
+
+	width: 100%;
+	height: auto;
+	margin-bottom: 15px;
+}
+
+.socialMediaLG {
+	margin-top: 20px;
+	height: 75px;
+	width: auto;
+}
+
+.socialMediaLG:hover {
+	border-color: yellow;
+}
+
+
+/* Table Formatting */
+
+table, th, td {
+  border: 1px white;
+  border-collapse: collapse;
+  }
+
+table {
+	width: 100%;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+caption {
+	color: white;
+	font-weight: bolder;
+	font-size: 18pt;
+	margin-bottom: 10px;
+}
+
+  th {
+  	background-color: #cfcfcf;
+  	color: #000000;
+  	text-decoration: underline;
+  	text-align: center;
+  	padding: 10px;
+  	font-size: 16pt;
+  }
+tr {
+	text-align: left;
+	padding: 3px;
+	color: #000000;
+}
+
+tr:nth-child(even) {
+  background-color: #eee;
+}
+
+tr:nth-child(odd) {
+ background-color: #fff;
+}
+
+td {
+	padding: 6px;
+}
+
+.floatingLogo {
+	height: 100px;
+	width: auto;
+	padding: 2px;
+	background-color: rgba(0,0,0, .8);
+	box-shadow: 0px 0px 5px #fff;
+	border-radius: 15%;
+	position: fixed;
+	right: 10px;
+	bottom:10px;
+	animation-name: popUp;
+  	animation-duration: 1.5s;
+}
+
+@keyframes popUp {
+  from {bottom: -105px}
+  to {bottom: 10px;}
+}
+
+.floatingLogo:hover {
+	background-color: rgba(105, 105, 105, .85);
+}
+
+.floatingLogo:active {
+	padding: 0;
+}
+
+/*footer formatting*/
+
+footer {
+	border-top: solid 5px #ffffff;
+	text-align: center;
+}
+
+footer p {
+	margin-bottom: 5px;
+}
+
+/* Responsive Divs */
+
+@media screen and (max-width: 1050px) {
+
+  	.backgroundInfo {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    height: fit-content;
+  	}
+
+	.floatingLogo {
+	height: 75px;
+	width: auto;
+	}
+
+	.infoCard {
+		padding:0;
+		margin-left: 0;
+	}
+
+	.backgroundInfo img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10px;
+	}
+
+	header {
+	font-size: 8pt;
+	margin:0;
+	padding:0;
+	}
+
+	iframe {
+		width: 250px;
+		height: 200px;
+	}
+
+	.gymImage {
+		width: 250px;
+		height: auto;
+	}
+
+}
